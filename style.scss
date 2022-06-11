@@ -20,3 +20,9 @@ footer {
     background-color: black;
     min-height: 15vh;
 }
+#mainP {
+    filter: sepia(1);
+    &:hover {
+        filter: invert(50);
+    }
+}

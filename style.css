@@ -21,4 +21,11 @@ main {
 footer {
   background-color: black;
   min-height: 15vh;
+}
+
+#mainP {
+  filter: sepia(1);
+}
+#mainP:hover {
+  filter: invert(50);
 }/*# sourceMappingURL=style.css.map */
