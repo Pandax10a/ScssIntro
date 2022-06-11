@@ -8,20 +8,40 @@ body {
     grid-template-rows: auto 80vh auto;
 
 }
+$main2: rgb(117, 228, 150);
 
 header {
     background-color: orange;
     min-height: 5vh;
+    &:hover{
+        color: $main2;
+    }
 }
 main {
     background-color: blue;
+    &:hover{
+        color: $main2;
+    }
 }
 footer {
     background-color: black;
+    &:hover{
+        color: $main2;
+    }
     min-height: 15vh;
 }
 #mainP {
     filter: sepia(1);
+    >h2 {
+        transition-duration: 2s;
+        transition-property: font-size;
+        
+        transition-timing-function: ease-in-out;
+       
+    }
+    >h2:hover {
+        font-size: 5em;
+    }
     &:hover {
         filter: invert(50);
     }

@@ -13,18 +13,35 @@ header {
   background-color: orange;
   min-height: 5vh;
 }
+header:hover {
+  color: rgb(117, 228, 150);
+}
 
 main {
   background-color: blue;
+}
+main:hover {
+  color: rgb(117, 228, 150);
 }
 
 footer {
   background-color: black;
   min-height: 15vh;
 }
+footer:hover {
+  color: rgb(117, 228, 150);
+}
 
 #mainP {
   filter: sepia(1);
+}
+#mainP > h2 {
+  transition-duration: 2s;
+  transition-property: font-size;
+  transition-timing-function: ease-in-out;
+}
+#mainP > h2:hover {
+  font-size: 5em;
 }
 #mainP:hover {
   filter: invert(50);
